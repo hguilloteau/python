@@ -2,6 +2,6 @@
 # La formule de conversion est : TF =TC ×1,8+32
 
 temperature_fahrenheit = 83.8
-temperature_celcius = (temperature_fahrenheit-32) / 1.8
+temperature_celsius = (temperature_fahrenheit-32) / 1.8
 
-print(temperature_fahrenheit,"°F =",temperature_celcius,"°C")
+print(temperature_fahrenheit,"°F =",temperature_celsius,"°C")

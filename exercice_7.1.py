@@ -5,6 +5,7 @@
 
 from turtle import *
 
+
 def triangle(couleur):
     "Fonction qui permet de dessiner un triangle équilatéral"
     color(couleur)
@@ -18,7 +19,7 @@ def triangle(couleur):
 liste_couleurs = ["blue", "red", "yellow", "green", "orange"]
 
 up()
-goto(-300,0)
+goto(-300, 0)
 down()
 
 i = 0
@@ -28,5 +29,7 @@ while i < len(liste_couleurs):
     up()
     forward(120)
     down()
-    
+
 input("Taper sur entrée pour stopper")
+
+print(triangle.__doc__)

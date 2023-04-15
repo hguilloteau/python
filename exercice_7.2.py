@@ -9,4 +9,4 @@ def ligneCar(n, ca):
         i = i + 1
     return ch
 
-print(ligneCar(6,"a"))
+print(ligneCar(6,"abc"))

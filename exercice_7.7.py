@@ -1,4 +1,4 @@
-# Programme de test du module desssins_tortue.py pour l'étoile
+# Programme de test du module desssins_tortue.py pour l'étoile 5 côtés
 
 from dessins_tortue import *
 

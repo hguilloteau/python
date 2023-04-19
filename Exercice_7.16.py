@@ -19,11 +19,8 @@ def changeCar(ch, ca1, ca2, debut=-1, fin=-1):
     ch_new = ""
 
     while i < lg:
-        if i >= debut and i <= fin:
-            if ch[i] == ca1:
-                ch_new = ch_new + ca2
-            else:
-                ch_new = ch_new + ch[i]
+        if i >= debut and i <= fin and ch[i] == ca1:
+            ch_new = ch_new + ca2
         else:
             ch_new = ch_new + ch[i]
         i = i + 1

@@ -6,7 +6,7 @@
 
 
 def volBoite(x1=10, x2=10, x3=10):
-    "renvoie le volume d’une boîte parallélépipédique dont on fournit les trois dimensions x1, x2, x3 en arguments"
+    "renvoie le volume d’une boîte parallélépipédique dont on fournit les trois dimensions x1, x2, x3 en arguments - il y a une valeur par défaut pour les 3 arguments : 10"
     return x1 * x2 * x3
 
 

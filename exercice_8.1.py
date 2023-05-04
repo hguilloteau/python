@@ -3,6 +3,8 @@ from tkinter import *
 from random import randrange
 
 # --- définition des fonctions gestionnaires d'événements : ---
+
+
 def drawline():
     "Tracé d'une ligne dans le canevas can1"
     global x1, y1, x2, y2, coul
@@ -15,14 +17,23 @@ def changecolor():
     "Changement aléatoire de la couleur du tracé"
     # => génère un nombre aléatoire de 0 à 7
     global coul
-    pal = ['purple', 'cyan', 'maroon', 'green', 'red', 'blue', 'orange', 'yellow']
+    pal = ['purple', 'cyan', 'maroon', 'green',
+           'red', 'blue', 'orange', 'yellow']
     c = randrange(8)
+    # ---------------------------------------------------------------------
+    # Exercice 8.1 - Comment faut-il modifier le programme pour ne plus avoir que des lignes de couleur cyan, maroon et green
+    # pal = ['maroon', 'cyan', 'green']
+    # c = randrange(3)
+    # ---------------------------------------------------------------------
     coul = pal[c]
+
 
 # ------ Programme principal -------
 # les variables suivantes seront utilisées de manière globale :
-# coordonnées de la ligne coul = 'dark green' # couleur de la ligne
+# coordonnées de la ligne
 x1, y1, x2, y2 = 10, 190, 190, 10
+# couleur de la ligne
+coul = 'dark green'
 # Création du widget principal ("maître") :
 fen1 = Tk()
 # création des widgets "esclaves" :

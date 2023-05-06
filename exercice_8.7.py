@@ -16,14 +16,14 @@ from tkinter import *
 # ------ Programme principal -------
 # les variables suivantes seront utilisées de manière globale :
 # coordonnées des anneaux
-coord = [[100, 80], [200, 80], [300, 80], [150, 160], [250, 160]]
+coord = [[100, 80], [220, 80], [340, 80], [150, 160], [270, 160]]
 # palette de couleur des anneaux
-pal = ['blue', 'yellow', 'black', 'green', 'red']
+pal = ['blue', 'black', 'red', 'yellow', 'green']
 # Création du widget principal ("maître") :
 fen1 = Tk()
 # création des widgets "esclaves" :
 can1 = Canvas(fen1, bg='white', height=300, width=500)
-can1.pack(side=LEFT)
+can1.pack(side=TOP)
 bou1 = Button(fen1, text='Quitter', command=fen1.quit)
 bou1.pack(side=BOTTOM)
 # bou2 = Button(fen1, text='Tracer une ligne',
@@ -36,7 +36,7 @@ i = 0
 nb = len(pal)
 while i < nb:
     can1.create_oval(coord[i][0], coord[i][1], coord[i]
-                     [0]+120, coord[i][1]+120, width=2, outline=pal[i])
+                     [0]+120, coord[i][1]+120, width=4, outline=pal[i])
     i = i + 1
 
 fen1.mainloop()     # démarrage du réceptionnaire d’événements

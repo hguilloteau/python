@@ -5,7 +5,7 @@ from tkinter import *
 
 
 def avance():
-    "Fonction qui permet de déplacer un cercle de gd et dh pixels"
+    "Fonction qui permet de déplacer un cercle de dx pixels"
     global x, y, dx
     # vérifier qu'avec le pas de déplacement on se sort pas du canevas
     if x+30+dx >= xmax:

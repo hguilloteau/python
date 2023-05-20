@@ -58,8 +58,10 @@ while not choix:
     if c == 1:
         file = open(filename, 'r')
         see(file)
+        file.close()
         choix = 1
     elif c == 2:
         file = open(filename, 'a')
         insert(file)
+        file.close()
         choix = 1

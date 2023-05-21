@@ -5,7 +5,7 @@
 
 
 def compteCar(chaine, caractere):
-    "fonction qui cherche un caractere dans une chaine et renvoie la position du caractere, renvoie -1 si pas trouvé"
+    "fonction qui cherche un caractere dans une chaine et renvoie le nombre de caracteres trouvés, renvoie -1 si pas trouvé"
     lg_ch = len(chaine)
     i = 0
     nb = 0
